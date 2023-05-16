@@ -7,7 +7,7 @@ eg.
     lst = [(1,'sometext'),(2,''),(3, None),(4, 'someothertext')]
 
     rdd = sc.parallelize(lst).map(lambda x: Row(id=x[0], txt=x[1]))
-    df= sqlContext.createDataFrame(myrdd)
+    df= sqlContext.createDataFrame(rdd)
 isNull() returns True for Row#3, thus below statement returns one row 
 
     mydf.filter(col("txt").isNull()).show(truncate=False)
