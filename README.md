@@ -23,3 +23,8 @@ isNull() returns True for Row#3, thus below statement returns one row
     |id |txt|
     +---+---+
     +---+---+
+
+## Run Spark on K8s
+### reference
+https://spark.apache.org/docs/latest/running-on-kubernetes.html <br>
+https://medium.com/rahasak/spark-cluster-deployment-with-kubernetes-1848d061cfc9
